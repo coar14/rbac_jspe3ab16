@@ -1,5 +1,5 @@
 @extends('mainLayout')
-
+@section('page-title', 'Accounting')
 @section('page-content')
 <div class="container-fluid">
     Simplicity is the ultimate sophistication. - Leonardo da Vinci
