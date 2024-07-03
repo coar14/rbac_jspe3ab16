@@ -5,7 +5,7 @@
 @section('page-content')
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12">
+        <div class="">
             <a href="{{ route('dash') }}" class="btn btn-secondary mb-3">Back</a>
             <h2>Manage Users</h2>
             <table class="table table-bordered">
@@ -38,17 +38,24 @@
                                 @endforeach
                             </td>
                             <td>
-                                <button type="submit" class="btn btn-success">Update Roles</button>
+                                <button type="submit" class="btn btn-success">Save</button>
                             </td>
                         </form>
                         <td>
-                            <a href="{{ route('admin.editUserPermissions', $user->id) }}" class="btn btn-warning">Edit Permissions</a>
-                            <form action="{{ route('admin.deleteUser', $user->id) }}" method="POST" style="display:inline;">
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit" class="btn btn-danger">Delete</button>
-                            </form>
+                            <div class="btn-group" role="group">
+                                <a href="{{ route('admin.editUserPermissions', $user->id) }}" class="btn btn-outline-warning">
+                                    <i class="fas fa-edit"></i> Edit Permissions
+                                </a>
+                                <form action="{{ route('admin.deleteUser', $user->id) }}" method="POST" style="display:inline;">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-outline-danger">
+                                        <i class="fas fa-trash-alt"></i> Delete
+                                    </button>
+                                </form>
+                            </div>
                         </td>
+
                     </tr>
                     @endforeach
                 </tbody>

@@ -6,9 +6,12 @@
     <p>
         <a href="{{ route('usertool') }}" class="link-primary">Manage User Roles and Permissions</a>
     </p>
-    <p>
-        <a href="{{ route('home') }}" class="link-dark">Back</a>
-    </p>
+
+    <span>
+        <i class="fas fa-caret-left tech-icon"></i>
+        <a href="{{ route('home') }}" class="back-link">Back </a>
+    </span>
+
 </div>
 @endsection
 
