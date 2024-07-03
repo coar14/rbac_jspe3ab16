@@ -1,5 +1,6 @@
 @extends('mainLayout')
 
+@section('page-title', 'View Ledger Book')
 @section('page-content')
 <div class="container-fluid">
     <!-- It is quality rather than quantity that matters. - Lucius Annaeus Seneca -->

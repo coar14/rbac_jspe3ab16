@@ -1,5 +1,6 @@
 @extends('mainLayout')
 
+@section('page-title', 'View Ledger Book')
 @section('page-content')
 <div class="container-fluid">
     <!-- Be present above all else. - Naval Ravikant -->

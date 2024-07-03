@@ -1,5 +1,5 @@
 @extends('mainLayout')
-
+@section('page-title', 'Dashboard')
 @section('page-content')
 <div class="container-fluid">
     People find pleasure in different ways. I find it in keeping my mind clear. - Marcus Aurelius
