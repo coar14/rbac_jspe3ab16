@@ -19,7 +19,7 @@
                     </label>
                 </div>
                 @endforeach
-                <button type="submit" class="btn btn-success mt-3">Update Permissions</button>
+                <button type="submit" class="btn btn-success mt-3"> Update Permissions</button>
             </form>
         </div>
     </div>
